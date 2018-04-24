@@ -1,3 +1,10 @@
+TCP: End to end protocol built on top of IP. Maintains state of the two hosts, including IP packets received and acknowledgements. Each TCP has a sequence number.
+
+HTTP: Built on top of TCP. 
+
+UDP: TCP without the error handling. Packets are just sent. Used when speed is desirable.
+DNS: Translates domain names to numerical IP addresses. Essential function. 
+
 #### What happens in an URL in the browser and press enter?
 
 https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a
