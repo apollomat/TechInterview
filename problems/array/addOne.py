@@ -10,6 +10,6 @@ def addOne(l):
 
 
 if __name__ == "__main__":
-    arr = [9]
+    arr = [9,9,9]
     addOne(arr)
     print arr
