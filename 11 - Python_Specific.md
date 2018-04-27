@@ -14,16 +14,13 @@ They extend past python, and are functions that take a function as an argument a
 
 
 ## Lists vs Tuples
-Do you know what is the difference between lists and tuples? Can you give me an example for their usage?
 Tuples are immutable. A tuple might be a good type for a coordinate inst var in some class. Lists are ordered collections, but with a tuple, each index generally has a certain meaning, so coord[0] is the x coordinate and coord[1] is y.
 
 
 ## Range vs Xrange
-Do you know the difference between range and xrange?
 Range returns a list of the full sequence while xrange generates each element iteratively like you would with the "yield" keyword. This changes in python3, and the default behavior is to yield like xrange. I think xrange is out.
 
 
-## Special methods
+## Special methods (str, gt, hash)
 
-What are "special" methods (<foo>), how they work, etc
 These are methods like str and gt, which override behavior of other global functions like str() and operators like >. enter and exit will be used with the with keyword, and there are many more like getattr. Overriding getattr can result in some very unpredictable behavior with a dynamic language like Python, and you should be very careful when you use magic like that.
