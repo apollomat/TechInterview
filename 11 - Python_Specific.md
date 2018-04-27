@@ -1,5 +1,14 @@
 # Python Interview Questions
 
+## Interpreted language
+
+
+Python is an interpreted language. That means that, unlike languages like C and its variants, Python does not need to be compiled before it is run. Other interpreted languages include PHP and Ruby.
+
+## Dynamically Typed
+
+Python is dynamically typed, this means that you don't need to state the types of variables when you declare them or anything like that. You can do things like x=111 and then x="I'm a string" without error
+
 ## Shallow copy vs deep copying
 
 -   Shallow copy is used when a new instance type gets created and it keeps the values that are copied in the new instance. Whereas, deep copy is used to store the values that are already copied.   
@@ -24,3 +33,10 @@ Range returns a list of the full sequence while xrange generates each element it
 ## Special methods (str, gt, hash)
 
 These are methods like str and gt, which override behavior of other global functions like str() and operators like >. enter and exit will be used with the with keyword, and there are many more like getattr. Overriding getattr can result in some very unpredictable behavior with a dynamic language like Python, and you should be very careful when you use magic like that.
+
+
+## Python and multithreading
+
+Python doesn't allow multi-threading in the truest sense of the word. It has a multi-threading package but if you want to multi-thread to speed your code up, then it's usually not a good idea to use it. Python has a construct called the Global Interpreter Lock (GIL). The GIL makes sure that only one of your 'threads' can execute at any one time. A thread acquires the GIL, does a little work, then passes the GIL onto the next thread. This happens very quickly so to the human eye it may seem like your threads are executing in parallel, but they are really just taking turns using the same CPU core. All this GIL passing adds overhead to execution. This means that if you want to make your code run faster then using the threading package often isn't a good idea.  
+
+There are reasons to use Python's threading package. If you want to run some things simultaneously, and efficiency is not a concern, then it's totally fine and convenient. 
