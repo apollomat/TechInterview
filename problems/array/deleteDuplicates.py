@@ -1,7 +1,5 @@
 # input: sorted array with duplicates
-
 def remove(a):
-
     start = 0
     for indx in range(len(a)):
         if a[indx] == a[start]:
