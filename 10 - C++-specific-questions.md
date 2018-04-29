@@ -34,3 +34,5 @@ the method in child class object will get invoked.
 ## Pure virtual functions
 A function is made as pure virtual function by the using a specific signature, " = 0"
 appended to the function declaration as given below.
+
+Purpose: It's to make the class abstract, so that it can't be instantiated, but a child class can override the pure virtual methods to form a concrete class. This is a good way to define an interface in C++.
