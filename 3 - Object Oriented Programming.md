@@ -68,10 +68,10 @@
 - **Dynamic Binding –** The selection of the method body to be executed is delayed until runtime (based on the actual object being referred).
     - Java uses this by default for all methods except `private`, `final` & `static`.
 
-### Object Variable vs. Object Reference
+### Upcast vs. Downcast
 
 - **Upcasting –** When an object of a derived class is assigned to a variable of a base class (or any ancestor class). However, subclass-only members cannot be referred to by a superclass variable.
-- **Downcasting –** When an object of a base class is assigned to a variable of a derived class. This doesn't make sense in many cases and may be illegal.
+- **Downcasting –** When an object of a base class is assigned to a variable of a derived class. This doesn't make sense in many cases and may be illegal. e.g. Isosclees = Shape * . You can do Shape * = Isosceles() as upcasting
 - In Java, `object instanceof ClassName` will return true if object is an instance of `ClassName` or any descendent class of `ClassName`.
 
 ## Java Notes
