@@ -57,3 +57,21 @@ https://msdn.microsoft.com/en-us/library/s3f49ktz.aspx
 Int: 4 bytes
 Char: 1 byte
 Double: 8 bytes
+
+## VPTR and Vtable
+
+Tl;DR:
+vtable: A table of function pointers. It is maintained per class.
+vptr: A pointer to vtable. It is maintained per object (See this for an example).
+
+To implement virtual functions, C++ uses a special form of late binding known as the virtual table or vTable. The virtual table is a lookup table of functions used to resolve function calls in a dynamic/late binding manner.
+
+Every class that uses virtual functions (or is derived from a class that uses virtual functions) is given its own virtual table.
+
+This table is simply a static array that the compiler creates at compile time. A virtual table contains one entry for each virtual function that can be called by objects of the class.
+
+Each entry in this vTable is simply a Function Pointer that points to the most-derived function accessible by that class ie the most Base Class.
+
+The compiler also adds a hidden pointer to the base class, which we will call __vPtr.
+
+__vPtr is set (automatically) when a class instance is created so that it points to the virtual table for that class. __vPtr is inherited by derived classes,
