@@ -72,6 +72,17 @@ This table is simply a static array that the compiler creates at compile time. A
 
 Each entry in this vTable is simply a Function Pointer that points to the most-derived function accessible by that class ie the most Base Class.
 
-The compiler also adds a hidden pointer to the base class, which we will call __vPtr.
+The compiler also adds a hidden pointer to the base class, which we will call vptr.
 
-__vPtr is set (automatically) when a class instance is created so that it points to the virtual table for that class. __vPtr is inherited by derived classes,
+vPtr is set (automatically) when a class instance is created so that it points to the virtual table for that class. vptr is inherited by derived classes
+
+
+## Pointers vs references
+Pointers: A pointer is a variable that holds memory address of another variable. A pointer needs to be dereferenced with * operator to access the memory location it points to.  
+
+References : A reference variable is an alias, that is, another name for an already existing variable. A reference, like a pointer is also implemented by storing the address of an object.  
+
+A reference can be thought of as a constant pointer (not to be confused with a pointer to a constant value!) with automatic indirection, i.e the compiler will apply the * operator for you.  
+
+
+Pointers can be reassigned, references cannot. Pointer arithmetic, pointer == null, etc.
