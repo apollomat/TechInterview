@@ -32,6 +32,7 @@ def subArraySum(arr, n, sum):
         # try all subarrays
         # starting with 'i'
         j = i+1
+        #this is important!
         while j <= n:
 
             if curr_sum == sum:
