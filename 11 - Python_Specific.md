@@ -1,5 +1,54 @@
 # Python Interview Questions
 
+## Snippets
+
+```python
+
+# For alphabet
+>>> 'A'.isdigit()
+False
+>>> 'A'.isalpha()
+True
+
+mydict = {'carl':40,
+          'alan':2,
+          'bob':1,
+          'danny':3}
+
+for key in sorted(mydict):
+    print "%s: %s" % (key, mydict[key])
+
+# CONVERT int to string
+
+    s.append(chr(ord(‘0’) + x % 10) 			where x is int
+
+#CONVERT STRING TO INT
+
+elif ord(i) >= 48 and ord(i) <= 57 :
+            number_started = True
+            ans = (ans * 10) +  (ord(i) - ord('0'))
+
+
+def letterCasePermutation(self, S):
+  res = ['']
+  for ch in S:
+      if ch.isalpha():
+          res = [i+j for i in res for j in [ch.upper(), ch.lower()]]
+      else:
+          res = [i+ch for i in res]
+  return res
+
+```
+
+## List Comprehension
+```python
+
+return [key for key, value in sequences.iteritems() if value > 1] #extract the relevant keys
+
+
+
+```
+
 ## Interpreted language
 
 
@@ -39,4 +88,4 @@ These are methods like str and gt, which override behavior of other global funct
 
 Python doesn't allow multi-threading in the truest sense of the word. It has a multi-threading package but if you want to multi-thread to speed your code up, then it's usually not a good idea to use it. Python has a construct called the Global Interpreter Lock (GIL). The GIL makes sure that only one of your 'threads' can execute at any one time. A thread acquires the GIL, does a little work, then passes the GIL onto the next thread. This happens very quickly so to the human eye it may seem like your threads are executing in parallel, but they are really just taking turns using the same CPU core. All this GIL passing adds overhead to execution. This means that if you want to make your code run faster then using the threading package often isn't a good idea.  
 
-There are reasons to use Python's threading package. If you want to run some things simultaneously, and efficiency is not a concern, then it's totally fine and convenient. 
+There are reasons to use Python's threading package. If you want to run some things simultaneously, and efficiency is not a concern, then it's totally fine and convenient.
