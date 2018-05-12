@@ -12,7 +12,7 @@
 
 ## OOP Concepts
 
-- **Abstraction –** An abstraction denotes the essential characteristics of an object that distinguish it from all other kinds of objects, and thus, it provides crisply defined conceptual boundaries.
+- **Abstraction –** An abstraction denotes the essential characteristics of an object that distinguish it from all other kinds of objects, and thus, it provides crisply defined conceptual boundaries. You can call area on a shape but you don't care, as the caller, how the area is calculated.
 - **Encapsulation –** Encapsulation builds a barrier to protect an object's private data. Access to the private data can only be done through public methods of the object's class, such as accessors & mutators.
     - **Information Hiding –** Hides the implementation details of the class from users of the class.
 - **Inheritance –** A mechanism that defines a new class that inherits the properties and behaviors (methods) of a parent class. Superclass/Base Class (Parent) → Subclass/Derived Class (Child). Any inherited behavior may be redefined and overridden in the subclass. Avoids duplication of code.

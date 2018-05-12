@@ -1,5 +1,9 @@
 # Databases
 
+## Normalization
+
+Normalization - make the database more flexible by eliminating redundancy and inconsistent dependency
+
 ## Different Types of SQL JOINs  
 
 Here are the different types of the JOINs in SQL:  
@@ -63,3 +67,8 @@ Sample data well-suited for NoSQL:
 * Temporary data, such as a shopping cart
 * Frequently accessed ('hot') tables
 * Metadata/lookup tables
+
+
+## redirects
+
+Open source, in memory key value stored

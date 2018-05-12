@@ -1,9 +1,21 @@
 TCP: End to end protocol built on top of IP. Maintains state of the two hosts, including IP packets received and acknowledgements. Each TCP has a sequence number.
 
-HTTP: Built on top of TCP. 
+HTTP: Built on top of TCP.
 
 UDP: TCP without the error handling. Packets are just sent. Used when speed is desirable.
-DNS: Translates domain names to numerical IP addresses. Essential function. 
+DNS: Translates domain names to numerical IP addresses. Essential function.
+
+
+REST: Client acts on a state of information in the backend. All communication is stateless.
+
+Sample REST calls:
+
+GET /someresources/anId
+
+PUT /someresources/anId {"anotherdata": "another value"}
+
+Problems with REST: Sometimes data could require multiple calls to display a webpage (Facebook, etc). Requires a certain hierarchy.
+
 
 #### What happens in an URL in the browser and press enter?
 
@@ -75,5 +87,3 @@ If you look at the above response the first line shows a status code. This is qu
 So, if you encountered an error you can take a look at the HTTP response to check what type of status code you have received.
 ## The browser displays the HTML content (for HTML responses which is the most common).
 The browser displays the HTML content in phases. First, it will render the bare bone HTML skeleton. Then it will check the HTML tags and sends out GET requests for additional elements on the web page, such as images, CSS stylesheets, JavaScript files etc. These static files are cached by the browser so it doesn’t have to fetch them again the next time you visit the page. At the end, you’ll see maps.google.com appearing on your browser.
-
-

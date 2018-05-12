@@ -25,3 +25,4 @@ int smallestSubWithSum(int arr[], int n, int x)
     }
     return min_len;
 }
+// 3, 4, 17, 20, 5
