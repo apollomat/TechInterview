@@ -4,8 +4,6 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-
-
         dict_t = {}
         start = 0
         curr_max = 0
@@ -20,4 +18,3 @@ class Solution(object):
                 curr_max = max(curr_max, indx - start + 1)
             dict_t[s[indx]] = indx
         return curr_max
-            
