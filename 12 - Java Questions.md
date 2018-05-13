@@ -4,6 +4,10 @@
 
 An interface is entirely virtual, where as an abstract method can have some shared code. Example: In you don’t have any common code between rectangle and circle then go with interface.
 
+interface: To implement a contract by multiple unrelated objects (car can be sold, so can a pencil)
+
+abstract class: To implement the same or different behaviour among multiple related objects
+(customer type -- gold, silver, platinum, make getName an abstract method)
 
 ## Final keyword
 
@@ -40,3 +44,7 @@ This method is thrown right before an object is freed. If you want to close a DB
 ## Static method
 
 Variable is used for all of the classes and is class specific, not object specific.
+
+## Volatile
+
+Guarantees that all reads/writes of the variable will be read from main memory (and not a cache).
