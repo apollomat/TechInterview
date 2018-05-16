@@ -8,7 +8,7 @@
         # Set a variable to hold the max monetary value so far
         # for current_capacity
         current_max_value = 0
-
+        # here, we may want to look at cakes more than once!
         for cake_weight, cake_value in cake_tuples:
             # If a cake weighs 0 and has a positive value the value of
             # our duffel bag is infinite!

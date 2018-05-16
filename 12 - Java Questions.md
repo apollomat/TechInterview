@@ -48,3 +48,12 @@ Variable is used for all of the classes and is class specific, not object specif
 ## Volatile
 
 Guarantees that all reads/writes of the variable will be read from main memory (and not a cache).
+
+
+## Array vs ArrayList
+ What is difference between Array and ArrayList ? When will you use Array over ArrayList ? The Array and ArrayList classes differ on the following features:
+
+Arrays can contain primitive or objects, while an ArrayList can contain only objects.
+Arrays have fixed size, while an ArrayList is dynamic.
+An ArrayListprovides more methods and features, such as addAll, removeAll, iterator, etc.
+For a list of primitive data types, the collections use autoboxing to reduce the coding effort. However, this approach makes them slower when working on fixed size primitive data types.

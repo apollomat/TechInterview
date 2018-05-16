@@ -13,6 +13,7 @@ int countkDist(string str, int k)
     // str[i]
     for (int i = 0; i < n; i++)
     {
+# try to add all the substrings, so as soon as you see an element, check the next group of elements
         int dist_count = 0;
  
         // Initializing array with 0
